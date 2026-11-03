@@ -31,12 +31,12 @@ public class TestFileScore {
 		//System.out.println(header);
 		String title = "번호  이름  국어  영어  수학  총점  평균";
 		System.out.println(title);
-		
+		bw.write(title + "\n");
 //		while((line) != null) {
 //			line = br.readLine();
 //			System.out.println(line);
 //		}
-		bw.write(title + "\n");
+		
 		while((line= br.readLine()) != null) {
 			
 			String [] li = line.trim().split(",");
